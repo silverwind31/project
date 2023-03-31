@@ -1,0 +1,110 @@
+.animal_card_block{
+    margin-bottom: 175px;
+    @media #{$Tab}{
+        margin-bottom: 80px;
+    }
+    @media #{$mobile}{
+        margin-bottom: 60px;
+    }
+    .left{
+        img{
+            width: 100%;
+        }
+    }
+    .right{
+        .animal_border{
+            border-bottom: 4px solid #38a9a1;
+            margin-bottom: 35px;
+            @media #{$laptop}{
+                margin-bottom: 20px;
+            }
+            .title{
+                font-family: Amatic_bold;
+                font-size: 95px;
+                color: #38a9a1;
+                line-height: 1;
+                @media #{$laptop}{
+                    font-size: 80px;
+                }
+                @media #{$bigTab}{
+                    font-size: 64px;
+                }
+            }
+            .animal_urls{
+                display: flex;
+                column-gap: 28px;
+                margin-right: 52px;
+                @media #{$bigTab}{
+                    margin-right: 0;
+                }
+                .url{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    padding: 15px 25px;
+                }
+            }
+        }
+        p{
+            &:nth-child(n+3){
+                @media #{$bigTab}{
+                    display: none;
+                }
+            }
+            font-family: GillSans_Regular;
+            font-size: 25px;
+            @media #{$laptop}{
+                font-size: 22px;
+            }
+            @media #{$smallLaptop}{
+                br{
+                    display: none;
+                }   
+            }
+        }
+
+        .urls{
+            display: none;
+            @media #{$bigTab}{
+                display: block;
+                margin-bottom: 32px;
+            }
+        }
+        .animal_urls_card{
+            display: flex;
+            justify-content: start;
+            column-gap: 35px;
+            .url_white{
+                border: 3px solid #38a9a1;
+                border-radius: 58px;
+                font-family: Amatic_bold;
+                font-size: 70px;
+                line-height: 1;
+                text-decoration: none;
+                padding: 15px 25px;
+                @media #{$smallLaptop}{
+                    font-size: 56px;
+                    padding: 15px;
+                }
+                @media #{$bigTab}{
+                    font-size: 32px;
+                }
+            }
+            .url{
+                border-radius: 58px;
+                width: auto;
+                font-family: Amatic_bold;
+                font-size: 70px;
+                line-height: 1;
+                padding: 15px 25px;
+                @media #{$smallLaptop}{
+                    font-size: 56px;
+                    padding: 15px;
+                }
+                @media #{$bigTab}{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}

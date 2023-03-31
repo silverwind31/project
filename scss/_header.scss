@@ -1,0 +1,202 @@
+.vol_news{
+    margin-bottom: 28px;
+}
+header{
+    margin-bottom: 92px;
+    @media #{$bigTab}{
+        margin-bottom: 32px;
+    }
+    .big{
+        position: relative;
+        padding-bottom: 6px;
+        border-bottom: 4px solid #38a9a1;
+        margin-bottom: 18px;
+        @media #{$bigTab}{
+            justify-content: flex-start !important;
+        }
+        .logo{
+            font-family: Amatic_bold;
+            font-size: 58.13px;
+            @media #{$Tab}{
+                font-size: 40px;
+            }
+            @media #{$Tab}{
+                font-size: 32px;
+            }
+            span{
+                color:#008569;
+            }
+        }
+        .d-flex{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 62px;
+            margin: auto;
+            column-gap: 60px;
+            @media #{$Tab}{
+                column-gap: 24px;
+                @media #{$mobile}{
+                    column-gap: 12px;
+                    right: 32px;
+                }
+            }
+            .dropdown{
+                .dropdown-toggle.custom_dropdown{
+                    white-space: nowrap;
+                    padding: 8px 11px;
+                    border: 3px solid #38a9a1 !important;
+                    border-bottom: none !important;
+                    border-radius: 15px 15px 0 0;
+                }
+                .dropdown-toggle{
+                    
+                    
+                    font-size: 16.87px;
+                    text-decoration: none;
+                    color: #392725;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    border-bottom: 3px solid #fff;
+                    transition: 0.3s all ease;
+                    .dropdown_item.avtive{
+                        color: #008569;
+                        background: #fff;
+                    }
+                    &:hover{
+                        border-bottom: 3px solid #38a9a1;
+                    }
+                    &::after{
+                        margin-left: 0;
+                        vertical-align: 2.1px;
+                        border-top: 6px solid;
+                        border-right: 7px solid transparent;
+                        border-bottom: 0;
+                        border-left: 7px solid transparent;
+                    }
+                    @media #{$mobile}{
+                        font-size: 15px;
+                    }
+                }
+                .dropdown-menu{
+                    border: 3px solid #38a9a1;
+                    border-top: none;
+                    border-radius: 0 0 15px 15px;
+                    padding: 0;
+                }
+                .dropdown-menu.shou{
+                    display: block;
+                    transform: translate() !important;
+                    top: 100% !important;
+                    transform: translate(0) !important;
+                    
+                }
+            }
+            .search{
+                .header_url{
+                    font-family: GillSans_bold;
+                    font-size: 16.87px;
+                    text-decoration: none;
+                    color: #392725;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    position: relative;
+                    border-bottom: 3px solid #fff;
+                    transition: 0.3s all ease;
+                    &:hover{
+                        border-bottom: 3px solid #38a9a1;
+                    }
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        height: 28px;
+                        width: 28px;
+                        border: 3px solid #38a9a1;
+                        border-radius: 50%;
+                        position: absolute;
+                        bottom: 6px;
+                        right: -34px;
+                    }
+                    @media #{$mobile}{
+                        font-size:15px
+                    }
+                    &::after{
+                        content: '';
+                        display: inline-block;
+                        width: 16px;
+                        height: 3px;
+                        background: #38a9a1;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        bottom: 6px;
+                        right: -42px;
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            li{
+                font-family: GillSans_bold;
+                text-transform: uppercase;
+                font-size: 16.87px;
+                border-bottom: 3px solid #fff;
+                transition: 0.3s all ease;
+                &:hover{
+                    border-bottom: 3px solid #38a9a1;
+                }
+                @media #{$laptop}{
+                    font-size: 16px;
+                }
+                @media #{$smallLaptop}{
+                    flex: 0 0 auto;
+                    width: calc(33.3333% - 40px);
+                    font-size: 15px;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                @media #{$bigTab}{
+                    width: 50%;
+                }
+                @media #{$Tab}{
+                    font-size: 14px;
+                }
+                @media #{$mobile}{
+                    width: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    color: #392725;
+                }
+            }
+            .dropdown{
+                .dropdown-toggle{
+                    &::after{
+                        margin-left: 0;
+                        vertical-align: 2.1px;
+                        border-top: 6px solid;
+                        border-right: 7px solid transparent;
+                        border-bottom: 0;
+                        border-left: 7px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+  
+  

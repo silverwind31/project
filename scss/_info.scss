@@ -1,0 +1,86 @@
+.data{
+    position: relative;
+    margin-bottom: 42px;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -43px;
+        height: 112px;
+        width: 100%;
+        background-image: url(../images/info_bottom.png);
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        @media #{$Tab}{
+            bottom: -43px;
+            height: 66px;
+        }
+        @media #{$mobile}{
+            height: 42px;
+        }
+    }
+        
+    .title{
+        text-align: center;
+        font-family: GillSans_bold;
+        font-size: 27px;
+        color: #38a9a1;
+        text-transform: uppercase;
+        @media #{$Tab}{
+            font-size: 24px;
+        }
+    }
+    .responsive{
+        @media #{$bigTab}{
+            &:last-child{
+                display: none;
+            }
+        }
+        .item{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .urls{
+        display: none;
+        @media #{$bigTab}{
+            display: block;
+            display: flex;
+            justify-content: center;
+            .url{
+                    padding: 20px;
+                    font-size: 20px;
+                    width: auto;
+                }
+            }
+    }
+    .info_text{
+        text-align: center;
+        font-family: GillSans_Regular;
+        font-size: 27px;
+        color: #392725;
+        @media #{$bigTab}{
+            font-size: 22px;
+            br{
+                display: none;
+            }
+        }
+        @media #{$bigTab}{
+            font-size: 20px;
+        }
+        
+    }
+    .info_short_text{
+        text-align: center;
+        font-family: GillSans_Regular;
+        font-size: 27px;
+        color: #38a9a1;
+        @media #{$bigTab}{
+            font-size: 22px;
+        }
+        @media #{$Tab}{
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.animals{
+    background-color: #38a9a1;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -27px;
+        height: 28px;
+        width: 100%;
+        background-image: url(../images/results_bottom.png);
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        @media #{$smallLaptop}{
+            bottom: -22px;
+            height: 24px;
+        }
+}
+    .title{
+        font-family: Amatic_bold;
+        font-size: 106px;
+        text-align: center;
+        color: #fff;
+        line-height: 1;
+        margin-bottom: 22px;
+        @media #{$bigTab}{
+            font-size: 70px;
+        }
+        @media #{$Tab}{
+            font-size: 40px;
+        }
+    }
+    .col-12{
+        margin-bottom: 44px;
+        @media #{$bigTab}{
+            margin-bottom: 0px;
+            &:last-child{
+                display: none;
+            }
+            &:nth-of-type(2){
+                .responsive{
+                    display: none;
+                }
+            }
+        }
+        &:nth-of-type(n+2){
+            .card_item{
+                .urls{
+                    .url{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .card_item{
+            background-color: #fff;
+            border-radius: 56px;
+            padding: 30px;
+            .name{
+                text-align: center;
+                font-family: GillSans_bold;
+                font-size: 37px;
+                color: #392725;
+                line-height: 1;
+                margin-bottom: 20px;
+            }
+            .wrap_img{
+                margin-bottom: 24px;
+                img{
+                    width: 100%;
+                }
+            }
+            .urls{
+                .gender{
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    column-gap: 7px;
+                }
+            }
+        }
+        .all{
+            margin-bottom: 22px;
+        }
+    }
+    .responsive{
+        display: none;
+        @media #{$bigTab}{
+            display: block;
+            display: flex;
+            justify-content:center;
+            padding-bottom: 32px;
+            .url{
+                width: auto;
+            }
+        }
+    }
+}
+
+
+
+  

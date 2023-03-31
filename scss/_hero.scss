@@ -1,0 +1,173 @@
+.hero{
+    background-image: url(../images/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -14px;
+        height: 112px;
+        width: 100%;
+        background-image: url(../images/hero_bottom.png);
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        @media #{$smallLaptop}{
+            bottom: -5px;
+        }
+        @media #{$bigTab}{
+            bottom: -6px;
+        }
+        @media #{$Tab}{
+            bottom: -1px;
+            height: 60px;
+        }
+        @media #{$mobile}{
+            height: 38px;
+        }
+        
+    }
+    .d-flex{
+        position: relative;
+        @media #{$mobile}{
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .title{
+            font-family: Amatic_regular;
+            font-size: 106px;
+            padding-top: 106px;
+            margin-bottom: 20px;
+            color: #fff;
+            @media #{$bigTab}{
+                padding-top: 0;
+                font-size: 70px;
+            }
+            @media #{$Tab}{
+                font-size: 40px;
+            }
+        }
+        .info{
+            font-family: GillSans_Regular;
+            font-size: 24px;
+            color: #fff;
+            padding-bottom: 156px;
+            @media #{$laptop}{
+                font-size: 24px;
+            }
+            @media #{$Tab}{
+                font-size: 20px;
+            }
+            @media #{$mobile}{
+                padding-bottom: 32px;
+            }
+        }
+        .right{
+            flex-direction: column;
+            justify-content: center;
+            .img{
+                position: absolute;
+                right: 200px;
+                top: -70px;
+                height:584px;
+                @media #{$laptop}{
+                    right: 194px;
+                    height: 583px;
+                }
+                @media #{$smallLaptop}{
+                    right: -35px;
+                }
+                @media #{$bigTab}{
+                    position: initial;
+                    height: 400px;
+                }
+                @media #{$Tab}{
+                    height: 324px !important;
+                }
+                img{
+                    height: 100%;
+                }
+            }
+            .text{
+                font-family: Amatic_bold;
+                font-size: 30px;
+                color: #fff;
+                transform: rotate(-16deg);
+                flex-direction: column;
+                justify-content: space-between;
+                @media #{$smallLaptop}{
+                    color: #392725;
+                }
+                @media #{$bigTab}{
+                    transform: rotate(-16deg);
+                    position: absolute;
+                    color: #fff;
+                    left: -227px;
+                    bottom: 80px;
+                    font-size: 22px;
+                }
+                @media #{$Tab}{
+                    font-size: 24px;
+                    transform: rotate(0deg);
+                    bottom: 60px;
+                }
+                @media #{$mobile}{
+                    font-size: 22px;
+                    bottom: 64px;
+                    left: 209px;
+                }
+            }
+            .wrap_text{
+                position: absolute;
+                left: -32px;
+                transform: rotate(-4deg);
+                @media #{$laptop}{
+                    left: -50px;
+                }
+                @media #{$bigTab}{
+                    left: -236px;
+                    bottom: 43px;
+                    transform: rotate(-6deg);
+                    width: 207px;
+                    img{
+                        width: 100%;
+                    }
+                    
+                }
+                @media #{$Tab}{
+                    display: none;
+                }
+            }
+            .wrap_sign{
+                position: absolute;
+                left: -20px;
+                bottom: 120px;
+                @media #{$laptop}{
+                    left: -40px;
+                }
+                @media #{$smallLaptop}{
+                    bottom: 116px;
+                }
+                @media #{$bigTab}{
+                    bottom: 53px;
+                    transform: rotate(-117deg);
+                    left: -80px;
+                }
+                @media #{$Tab}{
+                    bottom: 34px;
+                    left: -69px;
+                    transform: rotate(-102deg);
+                }
+                @media #{$mobile}{
+                    bottom: 32px;
+                    left: 192px;
+                    transform: rotate(363deg);
+                }
+            }
+        }
+    }
+    
+}

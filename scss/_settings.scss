@@ -1,0 +1,53 @@
+@font-face{
+    font-family: Amatic_regular;
+    src:url(../fonts/AmaticSC-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: Amatic_bold;
+    src:url(../fonts/AmaticSC-Bold.ttf);
+    font-weight: 700;
+}
+@font-face{
+    font-family: GillSans_Regular;
+    src:url(../fonts/GillSans.ttc);
+    font-weight: 400;
+}
+@font-face{
+    font-family: GillSans_bold;
+    src:url(../fonts/GillSans.ttc);
+    font-weight: 400;
+}
+
+*,ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.url{
+    display: inline-block;
+    padding: 20px;
+    background-color: #38a9a1;
+    width: 100%;
+    font-family: GillSans_bold;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    line-height: 1;
+    @media #{$smallLaptop}{
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+.url_white{
+    background-color: #fff;
+    color: #38a9a1;
+    font-size: 22px;
+    text-transform: uppercase;
+    @media #{$Tab}{
+        font-size: 20px;
+    }
+}

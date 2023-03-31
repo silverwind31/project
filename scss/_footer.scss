@@ -1,0 +1,191 @@
+footer{
+    padding-top: 114px;
+    background-color: #1c565e;
+    position: relative;
+    @media #{$bigTab}{
+        padding-top: 70px;
+    }
+    @media #{$mobile}{
+        padding-top: 22px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: -130px;
+        height: 163px;
+        width: 100%;
+        background-image: url(../images/footer_top.png);
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        @media #{$laptop}{
+            height: 150px;
+        }
+        @media #{$smallLaptop}{
+            height: 131px;
+        }
+        @media #{$bigTab}{
+            height: 84px;
+            top: -83px;
+        }
+        @media #{$Tab}{
+            height: 63px;
+            top: -61px;
+        }
+        @media #{$mobile}{
+            height: 42px;
+            top: -41px;
+        }
+}
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: -196px;
+        height: 295px;
+        width: 100%;
+        background-image: url(../images/footer_top_section.png);
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 15;
+        @media #{$laptop}{
+            top: -152px;
+            height: 232px;
+        }
+        @media #{$smallLaptop}{
+            top: -154px;
+        }
+        @media #{$bigTab}{
+            top: -154px;
+        }
+        @media #{$Tab}{
+            top: -92px;
+            height: 139px;
+        }
+        @media #{$mobile}{
+            top: -64px;
+            height: 97px;
+        }
+    }
+    .title{
+        color: #392725;
+        font-family: Amatic_bold;
+        font-size: 70px;
+        span{
+            color: #008569;
+        }
+        @media #{$bigTab}{
+            font-size: 64px;
+        }
+        @media #{$Tab}{
+            font-size: 40px;
+        }
+    }
+    .footer_top{
+        padding-bottom: 54px;
+        @media #{$mobile}{
+            padding-bottom: 22px;
+        }
+        .item{
+            @media #{$bigTab}{
+                &:last-child{
+                    display: none;
+                }
+                
+            }
+            @media #{$mobile}{
+                flex: 0 0 auto;
+                width: 100%;
+                .title{
+                    text-align: center;
+                }
+
+            }
+            .special_network{
+                column-gap: 12px;
+                a{
+                    display: inline-block;
+                    height: 58px;
+                    width: 58px;
+                    position: relative;
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                    img{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                }
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li{
+                    font-family: GillSans_bold;
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        line-height: 1;
+                        transition: 0.3s all ease;
+                        &:hover{
+                            color: #008569;
+                        }
+                    }
+                    @media #{$Tab}{
+                        font-size: 16px;
+                    }
+                    @media #{$mobile}{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .none{
+                display: none;
+                @media #{$bigTab}{
+                    display: block;
+                }
+            }
+        }
+    }
+    .footer_bottom{
+        color: #fff;
+        .left{
+            font-family: GillSans_Regular;
+            font-size: 28px;
+            @media #{$Tab}{
+                font-size: 24px;
+            }
+            @media #{$mobile}{
+                font-size: 16px;
+            }
+            
+        }
+        .center,.right{
+            font-family: GillSans_Regular;
+            font-size: 21px;
+            @media #{$mobile}{
+                font-size: 16px;
+            }
+        }
+        .bottom_item{
+            @media #{$bigTab}{
+                &:last-child{
+                    display: none;
+                }
+            }
+            .right{
+                display: none;
+                @media #{$bigTab}{
+                    display: block;
+                }
+            }
+        }
+    }
+}

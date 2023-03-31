@@ -1,0 +1,354 @@
+.catalogue_block{
+    position: relative;
+    margin-bottom: 196px;
+    @media #{$bigTab}{
+        margin-bottom: 124px;
+    }
+    @media #{$Tab}{
+        margin-bottom: 80px;
+    }
+    @media #{$mobile}{
+        margin-bottom: 40px;
+    }
+    .one_row{
+        margin-bottom: 40px;
+        @media #{$smallLaptop}{
+            padding-top: 538px;
+        }
+        @media #{$bigTab}{
+            padding-top: 966px;
+            margin-bottom: 10px;
+        }
+        @media #{$Tab}{
+            padding-top: 1200px;
+        }
+    }
+    .two_row{
+        margin-bottom: 83px;
+        @media #{$bigTab}{
+            margin-bottom: 40px;
+        }
+    }
+    .d-flex{
+        justify-content: end;
+        column-gap: 30px;
+        @media #{$smallLaptop}{
+            justify-content: center;
+            column-gap: 80px;
+        }
+        @media #{$bigTab}{
+            column-gap: 10px;
+        }
+        @media #{$Tab}{
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+        
+        .catalogue_item{
+            padding: 28px 28px 20px 28px;
+            border: 3px solid #38a9a1;
+            border-radius: 60px;
+            position: relative;
+            @media #{$laptop}{
+                flex: 0 0 auto;
+                width: 350px;
+                padding: 18px 18px 10px 18px;
+            }
+            @media #{$Tab}{
+                flex:  0 0 auto;
+                width: 100%;
+            }
+            
+            .animal_name{
+                text-align: center;
+                font-family: GillSans_bold;
+                font-weight: 600;
+                font-size: 42px;
+                line-height: 1;
+                margin-bottom: 12px;
+            }
+            .img{
+                padding: 0 15px;
+                margin-bottom: 40px;
+                img{
+                    width: 100%;
+                }
+            }
+            .animal_info{
+                font-family: GillSans_Regular;
+                font-size: 18px;
+                margin-bottom: 65px;
+                text-align: center;
+                @media #{$laptop}{
+                    br{
+                        display: none;
+                    }
+                }
+            }
+            .catalogue_urls{
+                text-align: center;
+                position: absolute;
+                bottom: 15px;
+                left: 0;
+                right: 0;
+                a{
+                    display: inline-block;
+                    font-family: Amatic_bold;
+                    font-size: 58px;
+                    line-height: 1;
+                    color: #38a9a1;
+                    text-decoration: none;
+                    @media #{$Tab}{
+                        font-size: 50px;
+                    }
+                }
+            }
+            .urls{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                align-items: flex-end;
+                position: absolute;
+                right: 15px;
+                top: 62px;
+                .url{
+                    width: auto;
+                    padding: 12px 22px;
+                }
+            }
+        }
+    }
+    .urls{
+        text-align: center;
+        .url{
+            width: auto;
+            text-transform: uppercase;
+            padding: 30px 53px;
+            border-radius: 40px;
+            
+        }
+    }
+    .left_block{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 444px;
+        @media #{$laptop}{
+            width: 390px;
+        }
+        @media #{$smallLaptop}{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            top: -80px;
+            .top{
+                border-bottom-right-radius:40px;
+                border-bottom-left-radius:40px;
+                border-top-right-radius: 0 !important;
+                flex: 0 0 auto;
+                width: 25%;
+                margin-bottom: 0 !important;
+            }
+            .bottom{
+                border-radius: 0 0 30px 30px !important;
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .form_item{
+                        flex: 0 0 auto;
+                        width: calc(50% - 10px);
+                    }
+                }
+            }
+        }
+        @media #{$bigTab}{
+            flex-direction: column-reverse;
+            top: -38px;
+            .top{
+                width: 100%;
+            }
+            .bottom{
+                border-radius: 0 !important;
+            }
+        }
+        @media #{$Tab}{
+            .bottom{
+                form{
+                    .form_item{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        @media #{$mobile}{
+            top: -30px;
+        }
+        .top{
+            padding: 35px 0 25px 0;
+            background-color: #e1f2f1;
+            border-top-right-radius:40px;
+            border-bottom-right-radius:40px;
+            margin-bottom: 12px;
+            .title{
+                font-family: GillSans_bold;
+                font-size: 25px;
+                padding-left: 42px;
+                background-color: #38a9a1;
+                border-radius: 5px;
+                font-weight: 600;
+                color: #fff;
+                margin-bottom: 20px;
+                @media #{$bigTab}{
+                    margin-bottom: 10px;
+                }
+                @media #{$Tab}{
+                    font-size: 22px;
+                }
+            }
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                .left_info{
+                    font-family: GillSans_bold;
+                    font-size: 25px;
+                    border:3px solid #38a9a1;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    padding-left: 42px;
+                    @media #{$bigTab}{
+                        margin-bottom: 10px;
+                    }
+                    @media#{$Tab}{
+                        font-size: 22px;
+                    }
+                }
+                .inside{
+                        padding-left: 42px;
+                        list-style: none;
+                        margin-bottom: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 20px;
+                        &:last-child{
+                            margin-bottom: 20px;
+                            @media #{$bigTab}{
+                                margin-bottom: 10px;
+                            }
+                        }
+                        li{
+                            a{
+                                font-family: GillSans_bold;
+                                font-size: 16px;
+                                color: #000;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                            }
+                        }  
+                }
+            }
+        }
+        .bottom{
+            padding: 15px 10px 15px 15px;
+            background-color: #38a9a1;
+            border-radius: 0 30px 30px 0;
+            .sort{
+                font-family: GillSans_bold;
+                font-size: 31px;
+                font-weight: 600;
+                text-align: center;
+                @media #{$Tab}{
+                    font-size: 28px;
+                }
+            }
+            form{
+                .form_item{
+                    .form_title{
+                        font-family: GillSans_Regular;
+                        font-size: 31px;
+                        color: #fff;
+                        text-align: center;
+                        @media #{$Tab}{
+                            font-size: 28px;
+                        }
+                    }
+                    .labels{
+                        background-color: #fff;
+                        padding: 0 0;
+                        border-radius: 25px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+                        @media #{$laptop}{
+                            margin-bottom: 0;
+                        }
+                        label{
+                            position: relative;
+                            padding: 15px;
+                            font-family: GillSans_bold;
+                            font-size: 15px;
+                            text-transform: uppercase;
+                            .costom_radio{
+                                position: absolute;
+                                display: inline-block;
+                                height: 100%;
+                                width: 100%;
+                                border: 2px solid #38a9a1;
+                                left: 0;
+                                top: 0;
+                                border-radius: 25px;
+                                opacity: 0;
+                            }
+                            input{
+                                opacity: 0;
+                                display: none;
+                                &:checked + .costom_radio{
+                                    opacity: 1;
+                                }
+                                &:checked{
+                                    color: #38a9a1;
+                                }
+    
+                                &:checked ~ .radio_text{
+                                    color: #38a9a1;
+                                }
+                            }
+                           &:hover{
+                            cursor:pointer;
+                           }
+                        }
+                    }
+                    .four_radio{
+                        label{
+                            font-size: 12px;
+                        }
+                    }
+                    select{
+                        width: 100%;
+                        height: 52.5px;
+                        font-family: GillSans_bold;
+                        font-size: 15px;
+                        border-radius: 25px;
+                        border-color: #38a9a1;
+                        text-transform: uppercase;
+                        position: relative;
+                        &:focus + option {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            right: 0px;
+                            bottom: 0px;
+                            border: 2px solid var(--select-focus);
+                            border-radius: inherit;
+                          }
+                        
+                        option{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

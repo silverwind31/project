@@ -1,0 +1,94 @@
+@font-face{
+    font-family: Amatic_regular;
+    src:url(../fonts/AmaticSC-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: Amatic_bold;
+    src:url(../fonts/AmaticSC-Bold.ttf);
+    font-weight: 700;
+}
+@font-face{
+    font-family: GillSans_regular;
+    src:url(../fonts/GillSans.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: GillSans_bold;
+    src:url(../fonts/GillSansC-Bold.ttf);
+    font-weight: 700;
+}
+
+*,ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: normal;
+}
+/*start header*/
+header .header_logo{
+   font-family: Amatic_bold;
+   font-size: 72px;
+   text-align: center;
+   position: relative;
+   padding-bottom: 6px;
+   border-bottom: 4px solid #38a9a1;
+}
+header .header_logo span{
+    color:#008569
+}
+header .header_logo .d-flex{
+    position: absolute;
+    top: -22px;
+    right: 0;
+    column-gap: 60px;
+}
+header .header_logo .dropdown a{
+    font-family: GillSans_bold;
+    font-size: 18.66px;
+    text-decoration: none;
+    color: #392725;
+    display: inline-block;
+    text-transform: uppercase;
+}
+header .header_logo .dropdown .dropdown-toggle::after{
+    margin-left: 0;
+    vertical-align: 2.1px;
+    border-top: 6px solid;
+    border-right: 7px solid transparent;
+    border-bottom: 0;
+    border-left: 7px solid transparent;
+}
+header .header_logo .search a{
+    position: relative;
+    font-family: GillSans_bold;
+    font-size: 18.66px;
+    text-decoration: none;
+    color: #392725;
+    text-transform: uppercase;
+    padding-right: 28px;
+}
+header .header_logo .search a::before{
+    content: '';
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    border: 3px solid #38a9a1;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+}
+header .header_logo .search a::after{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    background: #38a9a1;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -5px;
+    right: -16px;
+}

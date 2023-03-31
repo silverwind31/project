@@ -1,0 +1,111 @@
+.animal_card.hero_vol_news{
+    margin-bottom: 75px;
+    @media #{$Tab}{
+        margin-bottom: 48px;
+    }
+    @media #{$mobile}{
+        margin-bottom: 32px;
+    }
+}
+.hero_documents.hero_vol_news{
+    margin-bottom: 85px;
+    @media #{$Tab}{
+        margin-bottom: 48px;
+    }
+    @media #{$mobile}{
+        margin-bottom: 32px;
+    }
+}
+.feedback.hero_vol_news{
+    margin-bottom: 68px;
+    @media #{$Tab}{
+        margin-bottom: 48px;
+    }
+    @media #{$mobile}{
+        margin-bottom: 32px;
+    }
+}
+.hero_galleryDogs.hero_vol_news
+    {
+    margin-bottom: 57px;
+    @media #{$Tab}{
+        margin-bottom: 48px;
+    }
+    @media #{$mobile}{
+        margin-bottom: 32px;
+    }
+}
+.video_gallery{
+    margin-bottom: 70px;
+    @media #{$Tab}{
+        margin-bottom: 48px;
+    }
+    @media #{$mobile}{
+        margin-bottom: 32px;
+    }
+}
+.hero_vol_news{
+    margin-bottom: 80px;
+    background-color: #38a9a1;
+    background-image: url(../images/hero_vol_news_bg.png);
+    background-repeat: no-repeat;
+    background-position: top right; 
+    background-size: contain; 
+    @media #{$bigTab}{
+        margin-bottom: 40px;
+    }  
+    @media #{$mobile}{
+        margin-bottom: 32px;
+    }
+    .title{
+        padding-top: 94px;
+        font-family: Amatic_bold;
+        font-size: 106px;
+        color: #fff;
+        line-height: 1;
+        margin-bottom: 62px;
+        @media #{$smallLaptop}{
+            font-size: 84px;
+        }
+        @media #{$bigTab}{
+            font-size: 64px;
+            padding-top: 40px;
+            margin-bottom: 40px;
+        }
+        @media #{$Tab}{
+            padding-top: 20px;
+            margin-bottom: 20px;
+            font-size: 60px;
+        }
+    }
+    ul{
+        margin: 0;
+        padding: 0 0 45px;
+        list-style: none;
+        display: flex;
+        column-gap: 10px;
+        @media #{$Tab}{
+            padding: 0 0 20px;
+        }
+        li{
+            font-family: GillSans_bold;
+            font-size: 19px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+            @media #{$bigTab}{
+                font-size: 18px;
+            }
+            @media #{$Tab}{
+                font-size: 13px;
+            }
+            @media #{$mobile}{
+                font-size: 8px;
+            }
+        }
+    }
+}
